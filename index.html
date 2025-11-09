@@ -1,44 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>web</title>
+    <title>Mi Sección de Estudios</title>
+    
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: hsl(0, 0%, 91%);
-            color: rgb(0, 0, 0);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: #f0f2f5;
             margin: 0;
+            padding: 30px;
+        }
+
+        .estudios {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        .nombre {
+            font-size: 40px;
+            color: #333;
             text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
         }
-        .container {
-            padding: 50px;
-            background-color: white;
-            border-radius: 20px;
+
+        .estudios_lista {
+            list-style: none;
         }
-        h1 {
-            color: black
+
+        .estudios_item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
         }
-        a {
-            color: blue;
-            text-decoration: underline;
+        
+        .estudios_item_texto {
+            flex: 1;
         }
-        <meta name="keywords" content="Kenny Espinoza, pagina web">
+
+        .titulo {
+            font-style: Arial;
+            font-size: 30px;
+            font-weight: bold;
+            color: #0056b3;
+            margin: 0;
+        }
+        
+        .contenido {
+            font-style: Arial;
+            font-size: 20px;
+            color: #555;
+            margin: 5px 0;
+        }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Kenny Espinoza</h1>
-        <p>Mi página web</p>
-        <div>
-            <a href="https://www.linkedin.com/in/kenny-espinoza-486b6a385/" target="_blank">Linkedin</a>
-            <a href="https://github.com/KennyEQ" target="_blank">Github</a>
-        </div>
-    </div>
+
+    <section class="estudios" id="estudios">
+        
+        <h2 class="nombre">Kenny Espinoza Quispe</h2>
+
+        <ul class="estudios_lista">
+            
+            <li class="estudios_item">
+            <div class="estudios_item_texto">
+                    <h3 class="titulo">Biografia</h3>
+                    <p class="contenido">Soy Kenny Espinoza,tengo 18 años y soy estudiante de CCOMP en la Universidad Católica San Pablo,
+                         cursando actualmente el segundo ciclo, disfruto en mis tiempos libres de jugar videojuegos y tocar la guitarra</p>
+                </div>
+            </li>
+
+            <li class="estudios_item">
+            <div class="estudios_item_texto">
+                    <h3 class="titulo">Estudios</h3>
+                    <p class="contenido">-Estructuras Discretas</p>
+                    <p class="contenido">-Introducción a la Filosofía</p>
+                    <p class="contenido">-Introducción de Ciencia de la Computación</p>
+                    <p class="contenido">-Programación de Videojuegos</p>
+                 </div>
+            </li>
+
+            <li class="estudios_item">
+                <div class="estudios_item_texto">
+                    <h3 class="titulo">Contacto</h3>
+                    <p>
+                        puedes contactarme a través de mi correo:
+                        <a href="kenny.espinoza@ucsp.edu.pe">kenny.espinoza@ucsp.edu.pe</a>
+                    </p>
+                    <p>
+                        visita también:
+                        <a href="https://www.linkedin.com/in/kenny-espinoza-486b6a385/" target="_blank">Linkedin</a>
+                        <a href="https://github.com/KennyEQ" target="_blank">Github</a>
+                    </p>
+                    <p>
+                        Profesor:
+                        <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Ernesto Cuadros</a>
+                    </p>
+                </div>
+            </li>
+
+            </ul>
+
+    </section>
+
 </body>
-
 </html>
-
